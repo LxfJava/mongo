@@ -160,4 +160,17 @@ public class ServerManagementServiceTest {
       mongoTemplate.updateFirst(query, update, ServerManagement.class);
   }
 
+  @Test
+  void devTest04() {
+    List<ServerManagement> serverAll = db.getServerAll();
+    ServerManagement id2 = db.getServerById("id2");
+    System.out.println("=======================");
+    serverAll.forEach(System.out::println);
+    System.out.println("=======================");
+    System.out.println(id2);
+    System.out.println("=======================");
+
+
+  }
+
 }
