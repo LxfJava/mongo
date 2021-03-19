@@ -1,7 +1,7 @@
 package com.study.mongo;
 
-import com.study.mongo.business.domain.Param;
-import com.study.mongo.business.domain.ParamService;
+import com.study.mongo.business.pojo.Param;
+import com.study.mongo.business.service.ParamService;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

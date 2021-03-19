@@ -1,5 +1,6 @@
-package com.study.mongo.business.domain;
+package com.study.mongo.business.dao;
 
+import com.study.mongo.business.pojo.Param;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

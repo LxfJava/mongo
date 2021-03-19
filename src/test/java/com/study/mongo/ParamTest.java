@@ -1,19 +1,14 @@
 package com.study.mongo;
 
-import com.study.mongo.business.domain.Param;
-import com.study.mongo.business.domain.ParamDao;
-import com.study.mongo.business.domain.ParamService;
+import com.study.mongo.business.pojo.Param;
+import com.study.mongo.business.dao.ParamDao;
+import com.study.mongo.business.service.ParamService;
 import java.util.List;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.domain.Sort.Direction;
-import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  * @description:

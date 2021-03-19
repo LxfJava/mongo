@@ -1,4 +1,4 @@
-package com.study.mongo.business.domain;
+package com.study.mongo.business.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
