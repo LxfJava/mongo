@@ -1,5 +1,6 @@
 package com.study.mongo.business.pojo;
 
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,13 +9,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.io.Serializable;
 
 /**
- * @author Li
+ * @author Li 服务其管理
  * @create 2021/3/18   10:04 下午
  */
 @Data
-@Document(collection = "serverManagement")
 @AllArgsConstructor
 @NoArgsConstructor
+@Document(collection = "serverManagement")
 public class ServerManagement implements Serializable {
     private String id;
     private String serverName;
@@ -24,4 +25,6 @@ public class ServerManagement implements Serializable {
     private String port;
     private String belongResource;
     private String isTclEncryptedOrColony;
+    private List<ServerParam> serverParam;
+    private List<ServerTopic> serverTopic;
 }

@@ -4,6 +4,7 @@ package com.study.mongo.business.service;
 import com.study.mongo.business.dao.ServerManagementRepository;
 import com.study.mongo.business.pojo.ServerManagement;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -16,6 +17,9 @@ public class ServerManagementService {
 
     @Autowired
     private ServerManagementRepository repository;
+
+    @Autowired
+    private MongoTemplate template;
 
     /**
      * 新增数据
@@ -64,5 +68,25 @@ public class ServerManagementService {
         return repository.findById(id).get();
     }
 
+    //===============================================develop==============================================//
 
+    /**
+     * 新增数据
+     *
+     * @param server
+     * @return
+     */
+    public void addDevServer(ServerManagement server) {
+        repository.save(server);
+    }
+
+    /**
+     * 新增数据
+     *
+     * @param server
+     * @return
+     */
+    public void updateDevService(ServerManagement server) {
+        repository.save(server);
+    }
 }
