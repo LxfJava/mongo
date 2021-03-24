@@ -1,8 +1,8 @@
 package com.study.mongo.business.service;
 
 
-import com.study.mongo.business.dao.ServerManagementRepository;
-import com.study.mongo.business.pojo.ServerManagement;
+import com.study.mongo.business.dao.ServerManageRepository;
+import com.study.mongo.business.pojo.ServerManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
@@ -13,10 +13,10 @@ import java.util.List;
  * @create 2021/3/18   10:22 下午
  */
 @Service
-public class ServerManagementService {
+public class ServerManageService {
 
     @Autowired
-    private ServerManagementRepository repository;
+    private ServerManageRepository repository;
 
     @Autowired
     private MongoTemplate template;
@@ -27,7 +27,7 @@ public class ServerManagementService {
      * @param server
      * @return
      */
-    public void saveServer(ServerManagement server) {
+    public void saveServer(ServerManage server) {
         repository.save(server);
     }
 
@@ -36,7 +36,7 @@ public class ServerManagementService {
      *
      * @param server
      */
-    public void updateServer(ServerManagement server) {
+    public void updateServer(ServerManage server) {
         repository.save(server);
     }
 
@@ -54,8 +54,8 @@ public class ServerManagementService {
      *
      * @param
      */
-    public List<ServerManagement> getServerAll() {
-        List<ServerManagement> all = repository.findAll();
+    public List<ServerManage> getServerAll() {
+        List<ServerManage> all = repository.findAll();
         return all;
     }
 
@@ -64,7 +64,7 @@ public class ServerManagementService {
      *
      * @param id
      */
-    public ServerManagement getServerById(String id) {
+    public ServerManage getServerById(String id) {
         return repository.findById(id).get();
     }
 
@@ -76,7 +76,7 @@ public class ServerManagementService {
      * @param server
      * @return
      */
-    public void addDevServer(ServerManagement server) {
+    public void addDevServer(ServerManage server) {
         repository.save(server);
     }
 
@@ -86,7 +86,7 @@ public class ServerManagementService {
      * @param server
      * @return
      */
-    public void updateDevService(ServerManagement server) {
+    public void updateDevService(ServerManage server) {
         repository.save(server);
     }
 }

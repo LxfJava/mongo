@@ -17,7 +17,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 public class ServerParam {
   private String id;
-  private String paramName;
-  private String paramVal;
-  private String paramRemarks;
+  private String name;
+  private String type;
+  private String value;
+  private String remarks;
 }

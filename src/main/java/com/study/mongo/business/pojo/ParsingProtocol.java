@@ -22,9 +22,9 @@ public class ParsingProtocol implements Serializable {
 
   private String protocolEdition;
 
-  private String ProtocolRemarks;
+  private String protocolRemarks;
 
   private List<ParsingParam> connectParam;
 
-  private List<ParsingParam> ParsingParam;
+  private List<ParsingParam> parsingParam;
 }

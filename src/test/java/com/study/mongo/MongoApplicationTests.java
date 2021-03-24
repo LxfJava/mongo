@@ -1,28 +1,16 @@
-//package com.study.mongo;
-//
-//import com.study.mongo.business.pojo.ServerParam;
-//import com.study.mongo.business.service.ParamService;
-//import java.util.List;
-//import org.junit.jupiter.api.Test;
-//import org.junit.runner.RunWith;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.boot.test.context.SpringBootTest;
-//import org.springframework.test.context.junit4.SpringRunner;
-//
-//@SpringBootTest
-//@RunWith(SpringRunner.class)
-//class MongoApplicationTests {
-//
-//  @Autowired
-//  private ParamService paramService;
-//
-//  @Test
-//  void contextLoads() {
-//    List<ServerParam> all = paramService.getAll();
-//    System.out.println("========================================================");
-//    System.out.println(all);
-//    System.out.println("========================================================");
-//
-//  }
-//
-//}
+package com.study.mongo;
+
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@SpringBootTest
+@RunWith(SpringRunner.class)
+class MongoApplicationTests {
+
+  @Test
+  void contextLoads() {
+  }
+
+}

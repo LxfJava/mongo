@@ -15,8 +15,8 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "serverManagement")
-public class ServerManagement implements Serializable {
+@Document(collection = "serverManage")
+public class ServerManage implements Serializable {
     private String id;
     private String serverName;
     private String serverType;
@@ -26,5 +26,5 @@ public class ServerManagement implements Serializable {
     private String belongResource;
     private String isTclEncryptedOrColony;
     private List<ServerParam> serverParam;
-    private List<ServerTopic> serverTopic;
+    private List<ServerParam> serverTopic;
 }
