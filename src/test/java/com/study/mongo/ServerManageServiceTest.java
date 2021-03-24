@@ -3,7 +3,7 @@ package com.study.mongo;
 import com.study.mongo.business.dao.ServerManageRepository;
 import com.study.mongo.business.pojo.ServerParam;
 import com.study.mongo.business.pojo.ServerManage;
-import com.study.mongo.business.service.ServerManageService;
+import com.study.mongo.business.service.impl.ServerManageService;
 
 import java.util.ArrayList;
 import java.util.HashMap;

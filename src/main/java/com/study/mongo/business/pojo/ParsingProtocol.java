@@ -5,6 +5,7 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
@@ -17,6 +18,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ParsingProtocol implements Serializable {
+
+  @Id
+  private long id;
+
+  private String protocolCode;
 
   private String protocolName;
 
